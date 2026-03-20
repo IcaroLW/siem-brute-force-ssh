@@ -50,6 +50,16 @@ decoder.name:                     sshd
 location:                         journald
 full_log:                         Failed password for invalid user usuariofake from ::1 port 55306 ssh2
 
+| Campo | Valor |
+|---|---|
+| `@timestamp` | Mar 19, 2026 @ 21:09:55.702 |
+| `agent.name` | ubuntu1 |
+| `agent.ip` | 192.168.56.101 |
+| `data.srcuser` | usuariofake |
+| `decoder.name` | sshd |
+| `location` | journald |
+| `full_log` | `Failed password for invalid user usuariofake from ::1 port 55306 ssh2` |
+
 
 <img width="1918" height="1018" alt="log inteiro" src="https://github.com/user-attachments/assets/c0b3f292-80cb-4f7f-bd9c-335e2d33016e" />
 
