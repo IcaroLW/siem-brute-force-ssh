@@ -21,7 +21,7 @@ Técnica Utilizada:
 
 # Execução do Ataque:
 O ataque foi executado diretamente no agente Ubuntu, simulando múltiplas tentativas de autenticação SSH com um usuário inexistente:
-bashfor i in {1..20}; do ssh usuariofake@localhost; done
+sudo for i in {1..20}; do ssh usuariofake@localhost; done
 O comando gerou 20 tentativas consecutivas de login com o usuário usuariofake, todas resultando em Permission denied.
 
 Evidência do Ataque: 
