@@ -83,6 +83,6 @@ Identificação proativa de vulnerabilidades críticas no endpoint
 
 ## Referências
 
-Wazuh Documentation
-MITRE ATT&CK T1110 — Brute Force
-CVE-2023-3326a
+- Wazuh Documentation
+- MITRE ATT&CK T1110 — Brute Force
+- CVE-2023-3326a
