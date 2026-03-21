@@ -71,6 +71,13 @@ Evidência — Painel de Vulnerability Detection:
 <img width="1919" height="1016" alt="55cves" src="https://github.com/user-attachments/assets/94b47578-24a1-4619-a56d-71463e093bf0" />
 
 
+## Troubleshooting / Desafios encontrados no caminho:
+
+Durante a configuração das VMS no VirtualBox, percebi que o Ubuntu não estava bootando com êxito, dito isso tive que mudar a configuração da placa gráfica virtual de VMSVGA para VBoxSVGA e isso consertou este erro.
+
+Tive também um problema de que as VMS não estavam comunicando entre sí, percebi que era um erro com a placa de rede virtual, estava usando o protocolo NAT que as isola completamente, para resolver isso criei uma 2° placa de rede virtual no protocolo host-only em todas as 3 máquinas que faziam parte do ambiente SIEM e isso resolveu o problema.
+
+
 ## Conclusão
 O Wazuh detectou com sucesso o ataque de brute force SSH em tempo real, correlacionando os eventos individuais de falha de autenticação e registrando cada tentativa com os metadados completos (IP, usuário, porta, timestamp).
 Este cenário demonstra:
